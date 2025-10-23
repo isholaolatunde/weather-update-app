@@ -1,49 +1,117 @@
-# React + TypeScript + Vite
+# 🌤️ Weather Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive weather application built with React, TypeScript, and Vite. Features real-time weather data, geolocation support, and a beautiful glass-morphism design.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Real-time Weather Data** - Powered by OpenWeatherMap API
+- **Geolocation Support** - Automatic location detection
+- **City Search** - Search weather for any city worldwide
+- **5-Day Forecast** - Extended weather predictions
+- **Responsive Design** - Works perfectly on all devices
+- **Modern UI** - Glass-morphism design with smooth animations
+- **TypeScript** - Full type safety and better development experience
+- **Error Handling** - Comprehensive error states and user feedback
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View Live Demo](https://your-username.github.io/weather-dashboard) *(Update this link after deployment)*
 
-## Expanding the ESLint configuration
+## 📷 Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Desktop View
+![Weather Dashboard Desktop](https://via.placeholder.com/800x500/667eea/ffffff?text=Weather+Dashboard+Desktop)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Mobile View
+![Weather Dashboard Mobile](https://via.placeholder.com/300x600/667eea/ffffff?text=Weather+Dashboard+Mobile)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Technologies Used
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe development
+- **Vite** - Fast build tool and dev server
+- **CSS3** - Modern styling with animations
+- **OpenWeatherMap API** - Weather data source
+- **Lucide React** - Beautiful icons
+- **Axios** - HTTP client for API calls
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📋 Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+- OpenWeatherMap API key
+
+## ⚡ Quick Start
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/weather-dashboard.git
+   cd weather-dashboard
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   ```bash
+   cp .env.example .env
+   ```
+   Add your OpenWeatherMap API key to `.env`:
+   ```
+   VITE_OPENWEATHER_API_KEY=your_api_key_here
+   ```
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+## 🌟 Key Components
+
+- **WeatherService** - API integration and data fetching
+- **App Component** - Main application logic and state management  
+- **Responsive Design** - Mobile-first approach with CSS Grid/Flexbox
+- **Error Handling** - User-friendly error messages and loading states
+
+## 🎨 Design Features
+
+- Glass-morphism UI design
+- Smooth animations and transitions
+- Responsive layout for all screen sizes
+- Modern color gradients and shadows
+- Interactive hover effects
+
+## 📱 Browser Support
+
+- Chrome (recommended)
+- Firefox
+- Safari
+- Edge
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- [OpenWeatherMap](https://openweathermap.org/) for weather data API
+- [Lucide React](https://lucide.dev/) for beautiful icons
+- [Vite](https://vitejs.dev/) for the amazing build tool
 
 ```js
 // eslint.config.js
