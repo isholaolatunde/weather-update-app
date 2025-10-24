@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { CurrentWeather, WeatherForecast, Location } from '../types/weather';
 
 // OpenWeatherMap API configuration
-const API_KEY = import.meta.env.VITE_WEATHER_API_KEY || 'demo_key';
+const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY || 'demo_key';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5';
 const GEO_URL = 'https://api.openweathermap.org/geo/1.0';
 
